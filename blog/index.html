@@ -3,24 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>一次方程式のやり方</title>
-        <script>
-            var doc = document;
-            
-            function getElm(id){
-                return doc.getElementById(id)
-            }
-            
-            function check(){
-                if(getElm('check').value == ''){
-                    getElm('result').textContent = 'あってるよ〜';
-                    doc.cookie = 'yuki=True; path=/;';
-                    location.replace('/')
-                }else{
-                    getElm('result').textContent = '違うよ〜';
-                }
-                return
-            }
-        </script>
     </head>
     <body>
         <details>
@@ -164,5 +146,12 @@ A：B＝C：D のとき A✕D＝B✕Cとなる<br>
             </div>
             
         </div>
+            <div id="cookie-notice" class="cookie-notice">
+        お前はフランが好きか？<br>
+        <button id="accept-btn">好き</button>
+        <button id="reject-btn">嫌い</button>
+    </div>
+    <script src="script.js"></script>
     </body>
+    
 </html>
