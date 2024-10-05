@@ -7,7 +7,7 @@ document.getElementById('accept-btn').addEventListener('click', function() {
 document.getElementById('reject-btn').addEventListener('click', function() {
     hideCookieNotice();
     localStorage.setItem('cookieAccepted', 'false');
-    location.href = '/blog/trap/';
+    location.href = '/nyanko_a/trap/';
 });
 
 window.onload = function() {
