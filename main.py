@@ -314,7 +314,7 @@ def view_commonds(request: Request, yuki: Union[str] = Cookie(None)):
 @app.get("/load_instance")
 def home():
     global url
-    url = requests.get(r'https://raw.githubusercontent.com/mochidukiyukimi/yuki-youtube-instance/main/instances_1.txt').text.rstrip()
+    url = requests.get(r'https://raw.githubusercontent.com/mochidukiyukimi/yuki-youtube-instance/main/instances.txt').text.rstrip()
 
 
 @app.exception_handler(500)
