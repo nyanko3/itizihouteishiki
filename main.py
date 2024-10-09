@@ -11,8 +11,8 @@ import ast
 
 max_api_wait_time = 3
 max_time = 10
-apis = ast.literal_eval(requests.get('https://raw.githubusercontent.com/LunaKamituki/yukiyoutube-inv-instances/main/instances_list.txt').text)
-url = requests.get(r'https://raw.githubusercontent.com/mochidukiyukimi/yuki-youtube-instance/main/instance.txt').text.rstrip()
+apis = ast.literal_eval(requests.get('https://raw.githubusercontent.com/LunaKamituki/yukiyoutube-inv-instances/main/instances_1.txt').text)
+url = requests.get(r'https://raw.githubusercontent.com/mochidukiyukimi/yuki-youtube-instance/main/instances_1.txt').text.rstrip()
 version = "1.0"
 
 def getSource(name):
@@ -314,7 +314,7 @@ def view_commonds(request: Request, yuki: Union[str] = Cookie(None)):
 @app.get("/load_instance")
 def home():
     global url
-    url = requests.get(r'https://raw.githubusercontent.com/mochidukiyukimi/yuki-youtube-instance/main/instance.txt').text.rstrip()
+    url = requests.get(r'https://raw.githubusercontent.com/mochidukiyukimi/yuki-youtube-instance/main/instances_1.txt').text.rstrip()
 
 
 @app.exception_handler(500)
